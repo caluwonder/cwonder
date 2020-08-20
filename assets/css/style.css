@@ -1,4 +1,3 @@
-@charset "UTF-8";
 button {
   background-color: transparent !important;
   border: none; }
@@ -88,8 +87,7 @@ col {
 .nav-1 {
   position: absolute;
   top: 10%;
-  left: 23%;
-  display: flex; }
+  left: 23%; }
 
 .plus-1 {
   font-size: 55px;
@@ -98,6 +96,11 @@ col {
   letter-spacing: 1.5px;
   width: 300px;
   text-align: left; }
+
+#img1 {
+  display: none;
+  /*animation-duration: 3s;
+   animation-name: slidein;*/ }
 
 .img-1 {
   text-align: left;
@@ -108,44 +111,74 @@ col {
   font-size: 55px;
   color: white;
   font-weight: 600;
+  letter-spacing: 1.5px;
+  width: 300px;
+  text-align: left; }
+
+.nav-2 {
   position: absolute;
   top: 20%;
-  right: 20%;
-  width: 300px; }
+  right: 30%; }
 
-.plus-2:hover {
-  background-image: url(../../img/diseñodigital.png);
-  background-repeat: no-repeat; }
+.img-2 {
+  text-align: left;
+  position: absolute;
+  top: 23%;
+  right: 8%; }
+
+#img2 {
+  display: none; }
 
 .plus-3 {
   font-size: 55px;
   color: white;
   font-weight: 600;
-  position: absolute;
-  bottom: 15%;
-  left: 10%;
   width: 200px; }
 
-.plus-3:hover {
-  background-image: url(../../img/web.png);
-  background-repeat: no-repeat; }
+#img3 {
+  display: none; }
+
+.img-3 {
+  text-align: left;
+  margin: 12px 0 0 38px;
+  position: absolute; }
+
+.nav-3 {
+  position: absolute;
+  bottom: 15%;
+  left: 10%; }
 
 .plus-4 {
+  content: '';
   font-size: 55px;
   color: white;
   font-weight: 600;
-  position: absolute;
-  bottom: 5%;
-  right: 20%;
   width: 300px; }
 
-.plus-4:after:hover {
-  opacity: 0; }
-
 .plus-4:hover {
-  background-image: url(../../img/xcaluwonder.png);
-  background-repeat: no-repeat; }
+  transition: 1s;
+  transform: rotateZ(45deg); }
 
+#img4 {
+  display: none; }
+
+.img-4 {
+  position: absolute;
+  bottom: 5%;
+  right: 13%; }
+
+.nav-4 {
+  position: absolute;
+  bottom: 5%;
+  right: 30%; }
+
+.deco-x {
+  font-size: 55px;
+  color: #00FFF5;
+  font-weight: 600; }
+
+/*transition: 1s;
+    transform: rotateZ(45deg);*/
 .head {
   margin-top: 4em; }
 
@@ -163,7 +196,6 @@ col {
 
 .deco-text {
   font-size: 40px;
-  color: white;
   font-weight: 600; }
 
 .btn-menu {
@@ -291,7 +323,8 @@ col {
   color: #ffffff;
   font-weight: 300;
   text-align: justify;
-  margin-top: 5%; }
+  margin-top: 5%;
+  display: none; }
 
 #laboral h1 {
   font-size: 22px;
