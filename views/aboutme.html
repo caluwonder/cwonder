@@ -1,11 +1,12 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/animaciones.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/animaciones.css">
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -17,14 +18,22 @@
     <div class="about-back container-fluid">
         <section>
             <div class="d-flex justify-content-center head">
-                <div class="btn-back">- </div>
+                <div class="btn-back"><a href="../index.html">-</a> </div>
                 <div class="tit-1">about</div>
                 <div class="deco-text" style="color:magenta">:</div>
                 <div class="tit-1">Me</div>
-                <div class="btn-menu">+</div>
+                <div id="show" class="btn-menu">+</div>
+                    <div class="menu" style="display: none;">
+                        <ol>
+                        <li>India</li>
+                        <li>US</li>
+                        <li>UK</li>
+                        <li>Australia</li>
+                        </ol>
+                    </div>
             </div>
             <div class="d-flex justify-content-center mt-5">
-                <img src="img/cw-img.png">
+                <img src="../img/cw-img.png">
             </div>
             <div class="col-8 offset-2 about">
                 <p><strong><i>Diseñadora gráfica de profesión y por diversión,</i></strong> años trabajando en diversas áreas del diseño 
@@ -59,7 +68,7 @@
         <section class="world fade-in-top" id="mundo">
             <button class="cerrar">X</button>
             <div class="col-12 row text-about world">
-                <img src="img/brighton beach_melbourne-small.jpg" class="col-5 offset-1 world">
+                <img src="../img/brighton beach_melbourne-small.jpg" class="col-5 offset-1 world">
                 <div class="col-5">
                     <h1>Me perdí por el mundo durante 5 años!</h1>
                     <p>A fines del 2014 decidí comenzar la aventura más increíble de mi vida, me fui hasta Nueva Zelanda 
@@ -74,52 +83,61 @@
                 </div>
             </div>
         </section>
-        <section class="row justify-content-around" id="laboral">
-            <h1 class="col-12">EXPERIENCIA LABORAL</h1>
-            <div class="lab-text col-5 d-flex align-items-end flex-column">
-            <span>
-                <h2>2019 / Calu Wonder</h2>
-                <p>Al volver a Chile en 2019, comencé a trabajar oficialmente como freelance en mi propia marca, donde mayoritariamente busco asesorar en experiencia 
-                    de usuario, y contribuir en el desarrollo digital de mis clientes.  </p>
-            </span>
-            <span>
-                <h2>2014 / Metadata</h2>
-                <p>Tres meses antes de irme del país tuve la oportunidad de realizar un gran proyecto para Metadata, una empresa que 
-                    realiza soluciones tecnológicas educacionales para Santillana, pude desempeñar mis conocimientos como diseñadora UX/UI, 
-                    realizando prototipos para aplicaciones de educación y diseñar su sitio empresa. Luego en el 2020 volví a trabajar con ellos, 
-                    asesorándolos en mejoras de experiencia de usuario para varias de sus plataformas. </p>
-            </span>
-            <span>
-                <h2>2014 / Clínica Ciudad del Mar (Viña del Mar)</h2>
-                <p>Este quizás ha sido uno de los lugares en los que más logré desarrollarme profesionalmente, como diseñadora para el área comercial 
-                    y comunicaciones, tuve la gran oportunidad junto con Rodrigo Bravo (Jefe del área) de tomar las riendas de todo el diseño tanto interno, 
-                    comunicaciones, publicidad, marketing, y todo lo que nosotros pudiésemos realizar. 
-                    Luego de la esta gran experiencia fue cuando decidí irme a Nueva Zelanda, pero cuando volví a Chile en el 2019, tuve nuevamente la oportunidad 
-                    de trabajar en la clínica reemplazando por unos días a la misma diseñadora que había tomado mi lugar cuando me fui. Fue un orgullo para mí darme 
-                    cuenta que después de tantos años aún seguían vigentes muchos  de los diseños que yo había realizado e implementado.</p>
-            </span>
-        </div>
-        <div class="lab-text col-5 d-flex align-items-start flex-column">
-                <h2>2013 / Agencia 4 monos / Armtrong & Asociados</h2>
-                <p> Tuve la oportunidad de trabajar para estas dos agencias publicitarías como diseñadora gráfica por proyecto,  
-                    ganando mucha experiencia en el rubro publicitario y digital.
-                    Para la agencia 4 monos era quien estaba a la cabeza de la Marca Flores (Lencería) diseñando 360 y degradando 
-                    su primera revista editorial / catálogo.</p>
-           
-                <h2>2011 / Imagemaker</h2>
-                <p>Empresa del rubro IT, dónde tuve la oportunidad de trabajar en las oficinas del área comercial del banco BCI, 
-                    lugar donde era la encargada del marketing digital para clientes del banco.
-                    <ul>
-                        <li>Mailing masivos</li>
-                        <li>Campañas en sitio web personal cliente BCI</li>                    
-                    </ul>
-                </p>
-            <h2>2008 / gráficas OCM</h2>
-            <p>Práctica laboral en unas las primeras boutiques de diseño donde el cliente tenía trato directo con el diseñador, 
-                además de obtener mucho conocimiento como diseñadora, tuve la oportunidad de conocer sobre impresión a gran escala, 
-                montajes publicitarios, entre otros.</p>
-        </div>  
-            
+        <section>
+            <button class="plus-about3" id="open">+</button>
+            <div id="laboral" class="row d-flex justify-content-center">
+                <h1 class="col-12">EXPERIENCIA LABORAL</h1>
+                <div class="lab-text col-5 d-flex flex-column" style="padding:0 30px 0 60px;">
+                    <span>
+                        <h2>2019 / Calu Wonder</h2>
+                        <p>Al volver a Chile en 2019, comencé a trabajar oficialmente como freelance en mi propia marca, donde mayoritariamente busco asesorar en experiencia 
+                            de usuario, y contribuir en el desarrollo digital de mis clientes.  </p>
+                    </span>
+                    <span>
+                        <h2>2014 / Metadata</h2>
+                        <p>Tres meses antes de irme del país tuve la oportunidad de realizar un gran proyecto para Metadata, una empresa que 
+                            realiza soluciones tecnológicas educacionales para Santillana, pude desempeñar mis conocimientos como diseñadora UX/UI, 
+                            realizando prototipos para aplicaciones de educación y diseñar su sitio empresa. Luego en el 2020 volví a trabajar con ellos, 
+                            asesorándolos en mejoras de experiencia de usuario para varias de sus plataformas. </p>
+                    </span>
+                    <span>
+                        <h2>2014 / Clínica Ciudad del Mar (Viña del Mar)</h2>
+                        <p>Este quizás ha sido uno de los lugares en los que más logré desarrollarme profesionalmente, como diseñadora para el área comercial 
+                            y comunicaciones, tuve la gran oportunidad junto con Rodrigo Bravo (Jefe del área) de tomar las riendas de todo el diseño tanto interno, 
+                            comunicaciones, publicidad, marketing, y todo lo que nosotros pudiésemos realizar. 
+                            Luego de la esta gran experiencia fue cuando decidí irme a Nueva Zelanda, pero cuando volví a Chile en el 2019, tuve nuevamente la oportunidad 
+                            de trabajar en la clínica reemplazando por unos días a la misma diseñadora que había tomado mi lugar cuando me fui. Fue un orgullo para mí darme 
+                            cuenta que después de tantos años aún seguían vigentes muchos  de los diseños que yo había realizado e implementado.</p>
+                    </span>
+                </div>
+                <div class="lab-text col-5 d-flex align-items-start flex-column" style="padding: 0 60px 0 30px;">
+                    <span>
+                        <h2>2013 / Agencia 4 monos / Armtrong & Asociados</h2>
+                        <p> Tuve la oportunidad de trabajar para estas dos agencias publicitarías como diseñadora gráfica por proyecto,  
+                            ganando mucha experiencia en el rubro publicitario y digital.
+                            Para la agencia 4 monos era quien estaba a la cabeza de la Marca Flores (Lencería) diseñando 360 y degradando 
+                            su primera revista editorial / catálogo.
+                        </p>
+                    </span>
+                    <span>
+                        <h2>2011 / Imagemaker</h2>
+                        <p>Empresa del rubro IT, dónde tuve la oportunidad de trabajar en las oficinas del área comercial del banco BCI, 
+                            lugar donde era la encargada del marketing digital para clientes del banco.
+                            <ul>
+                                <li>Mailing masivos</li>
+                                <li>Campañas en sitio web personal cliente BCI</li>                    
+                            </ul>
+                        </p>
+                    </span>
+                    <span>
+                        <h2>2008 / gráficas OCM</h2>
+                        <p>Práctica laboral en unas las primeras boutiques de diseño donde el cliente tenía trato directo con el diseñador, 
+                            además de obtener mucho conocimiento como diseñadora, tuve la oportunidad de conocer sobre impresión a gran escala, 
+                            montajes publicitarios, entre otros.
+                        </p>
+                    </span>
+                </div> 
+            </div> 
         </section>
         <div class="footer row">
             <div class="col-12 d-inline-flex pl-0 justify-content-around">
@@ -181,8 +199,15 @@
           });
         });
         </script>
-    </head>
-    <body>
+    
+    <script>
+        $(document).ready(function(){
+            $('#show').click(function() {
+              $('.menu').toggle("slide");
+            });
+        });
+        </script>
+  
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

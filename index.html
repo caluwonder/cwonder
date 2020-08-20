@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -14,16 +14,33 @@
   </head>
   <body>
     <section class="main-back container-fluid">
-        <div class="main-text">
-            <div class="calu-t">CALU</div>
-            <div class="wond-t">WONDER</div>
-            <div class="gd-t">Graphic Designer</div>
+      <div class="main-text">
+          <div class="calu-t">CALU</div>
+          <div class="wond-t">WONDER</div>
+          <div class="gd-t">Graphic Designer</div>
+      </div>
+      <nav class="nav-1">
+        <div id="plus-1"><a href="views/aboutme.html" class="plus-1">+</a></div>
+        <div id="img-1" class="img-1" style="display:none;">
+          <span class="tit-1">about</span>
+          <span class="deco-text" style="color:magenta">:</span>
+          <span class="tit-1">Me</span>
         </div>
-        <button class="plus-1"><a href="/views/aboutme.html">+</a></button>
-        <button class="plus-2"><a href="views/digital.html">+</a></button>
-        <button class="plus-3"><a href="/views/aboutme.html">+</a></button>
-        <button class="plus-4"><a href="/views/aboutme.html">+</a></button>
-    </section>
+      </nav>
+      <a href="views/digital.html" class="plus-2">+</a>
+      <a href="views/aboutme.html" class="plus-3">+</a>
+      <a href="views/aboutme.html" class="plus-4">+</a>
+    </div>
+   
+      
+  </section>
+    <script>
+      $(document).ready(function(){
+        $("#plus-1").hover(function(){
+          $("#img-1").show(swing);
+        });
+      });
+    </script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
