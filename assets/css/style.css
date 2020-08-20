@@ -6,6 +6,19 @@ button {
 button:focus {
   outline: none; }
 
+a {
+  color: white!important;
+}
+a:hover {
+  color: white!important; 
+  text-decoration: none!important;
+}
+a:link {
+  color: white!important;
+}
+col{
+  padding: 0!important;
+}
 .main-back {
   background-image: radial-gradient(#4E0090, #230065);
   height: 100%;
@@ -44,7 +57,8 @@ button:focus {
   -webkit-text-stroke: 3px #ffffff;
   color: transparent;
   text-align: center;
-  line-height: 124px; }
+  line-height: 124px;
+}
 
 .wond-t:hover {
   transform: scale(1);
@@ -69,25 +83,31 @@ button:focus {
   justify-content: center;
   height: 100%; }
 
+.plusmain{
+    margin-left: 20px;
+}
+
+.nav-1{
+  position: absolute;
+  top: 10%;
+  left: 23%;
+  display: flex;
+}
 .plus-1 {
   font-size: 55px;
   color: white;
   font-weight: 600;
-  position: absolute;
-  top: 13%;
-  left: 23%;
   letter-spacing: 1.5px;
-  transition: 0.2s ease-in-out;
-  width: 300px; }
+  width: 300px; 
+  text-align: left;
+}
 
-.plus-1:hover {
-  background-image: url(../../img/aboutme.png);
-  width: 100%;
-  background-repeat: no-repeat;
-  animation: linear;
-  top: 13%;
-  left: 23%;
-  position: absolute; }
+.img-1{
+    text-align: left;
+    margin: 12px 0 0 38px ;
+    position: absolute;   
+}
+
 
 .plus-2 {
   font-size: 55px;
@@ -157,6 +177,10 @@ button:focus {
   font-weight: 600;
   padding-left: 30px; }
 
+.about{
+  z-index: 1;
+}
+
 .about p {
   color: white;
   font-family: "Montserrat", sans-serif;
@@ -178,7 +202,24 @@ button:focus {
   font-weight: 600;
   position: absolute;
   top: 26%;
-  left: 30%; }
+  left: 30%;
+  display: block; }
+
+  .plus-about2 {
+    font-size: 45px;
+    color: white;
+    font-weight: 600;
+    position: absolute;
+    right: 30%;
+    left: 30%; }
+
+  .plus-about3 {
+    font-size: 45px;
+    color: white;
+    font-weight: 600;
+    position: absolute;
+    top: 50%;
+    left: 5%; }
 
 .cls-1 {
   fill: none;
@@ -190,13 +231,7 @@ button:focus {
   top: -145%;
   width: 5.1em; }
 
-.plus-about2 {
-  font-size: 45px;
-  color: white;
-  font-weight: 600;
-  position: absolute;
-  right: 30%;
-  left: 30%; }
+
 
 .img-about {
   width: 400px;
@@ -262,15 +297,15 @@ button:focus {
   color: #ffffff;
   font-weight: 300;
   text-align: justify;
-  margin-top: -35%;
-  display: none; }
+  margin-top: 5%;
+ }
   #laboral h1 {
     font-size: 22px;
     text-align: center; }
   #laboral h2 {
     font-size: 18px;
     font-weight: 600;
-    margin-top: 80px; }
+    margin-top: 60px; }
   #laboral p {
     font-size: 14px; }
 
