@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+   
      <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -21,60 +21,69 @@
           <div class="wond-t">WONDER</div>
           <div class="gd-t">Graphic Designer</div>
       </div>
-        <div id="boton1" class="nav-1"><a href="views/aboutme.html" class="plus-1">+</a></div>
-        <div id="img1" class="img-1 nav-1">
-          <span class="tit-1">about</span>
-          <span class="deco-text" style="color:#F757EB">:</span>
-          <span class="tit-1">Me</span>
+        <div id="boton1" class="nav-1"><a href="views/aboutme.html" class="plus-1">+</a>
+          <div id="img1" class="img-1">
+            <span class="tit-1">about</span>
+            <span class="deco-text" style="color:#F757EB">:</span>
+            <span class="tit-1">Me</span>
+          </div>
+      </div>
+        <div id="boton2" class="nav-2"><a href="views/digital.html" class="plus-2">+</a>
+          <div id="img2" class="img-2">
+            <span class="tit-1">diseño</span>
+            <span class="deco-text"style="color:#FFA700">;</span>
+            <span class="tit-1">Digital</span>
+          </div>
         </div>
-        <div id="boton2" class="nav-2"><a href="views/digital.html" class="plus-2">+</a></div>
-        <div id="img2" class="img-2">
-          <span class="tit-1">diseño</span>3
-          <span class="deco-text" style="color:#FFA700">;</span>
-          <span class="tit-1">Digital</span>
+        <div id="boton3" class="nav-3"><a href="#" class="plus-3">+</a>
+          <div id="img3" class="img-3">
+            <span class="tit-1">WEB</span>
+            <span class="deco-text" style="color:#00FF00"><strong>.</strong></span>
+          </div>
         </div>
-        <div id="boton3" class="nav-3"><a href="#" class="plus-3">+</a></div>
-        <div id="img3" class="img-3 nav-3">
-          <span class="tit-1">WEB</span>
-          <span class="deco-text" style="color:#00FF00"><strong>.</strong></span>
-        </div>
-        <div id="boton4" class="nav-4"><a href="#" class="plus-4">+</a></div>
-        <div id="img4" class="img-4">
-          <span class="deco-x">x</span>
-          <span class="tit-1">caluwonder</span>
+        <div id="boton4" class="nav-4"><a href="#" class="plus-4">+</a>
+          <div id="img4" class="img-4">
+            <span class="tit-1">caluwonder</span>
+          </div>
         </div>
     </div>
    
       
   </section>
-    <script>
-       $(document).ready(function() { 
-            $("#boton1").hover(function() { 
-                $("#img1").show("2000,swing"); 
-            }); 
-      $(document).ready(function() { 
-            $("#boton2").hover(function() { 
-                $("#img2").show("2000,swing"); 
-            }); 
-        });
-        $(document).ready(function() { 
-            $("#boton3").hover(function() { 
-                $("#img3").show("2000,swing"); 
-            }); 
-        });
-        $(document).ready(function() { 
-            $("#boton4").hover(function() { 
-                $("#img4").show("2000,swing"); 
-            }); 
-        });
-      });
-    </script>
-
     <!-- Optional JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script>
+      $(document).ready(function() { 
+           $("#boton1").hover(function() { 
+               $("#img1").css({opacity: 1}); 
+           }); 
+           $("#boton1").mouseout(function() { 
+               $("#img1").css({opacity: 0}); 
+           }); 
+           $("#boton2").hover(function() { 
+               $("#img2").css({opacity: 1}); 
+           }); 
+           $("#boton2").mouseout(function() { 
+               $("#img2").css({opacity: 0}); 
+           }); 
+           $("#boton3").hover(function() { 
+               $("#img3").css({opacity: 1}); 
+           }); 
+           $("#boton3").mouseout(function() { 
+               $("#img3").css({opacity: 0}); 
+           }); 
+           $("#boton4").hover(function() { 
+               $("#img4").css({opacity: 1}); 
+           }); 
+           $("#boton4").mouseout(function() { 
+               $("#img4").css({opacity: 0}); 
+           });  
+            
+     });
+   </script>
   </body>
 </html>

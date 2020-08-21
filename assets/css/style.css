@@ -20,7 +20,7 @@ col {
 
 .main-back {
   background-image: radial-gradient(#4E0090, #230065);
-  height: 100%;
+  height: 100vh;
   width: 100%;
   position: absolute;
   padding: 0; }
@@ -87,90 +87,96 @@ col {
 .nav-1 {
   position: absolute;
   top: 10%;
-  left: 23%; }
+  left: 23%;
+  width: auto; }
 
 .plus-1 {
   font-size: 55px;
-  color: white;
   font-weight: 600;
   letter-spacing: 1.5px;
-  width: 300px;
   text-align: left; }
 
 #img1 {
-  display: none;
-  /*animation-duration: 3s;
-   animation-name: slidein;*/ }
+  opacity: 0;
+  transition: all .5s ease-in; }
 
 .img-1 {
-  text-align: left;
-  margin: 12px 0 0 38px;
-  position: absolute; }
+  position: relative;
+  margin-top: -40%;
+  margin-left: 24%;
+  width: 100%; }
 
 .plus-2 {
   font-size: 55px;
   color: white;
   font-weight: 600;
   letter-spacing: 1.5px;
-  width: 300px;
   text-align: left; }
 
 .nav-2 {
   position: absolute;
   top: 20%;
-  right: 30%; }
+  right: 10%;
+  width: auto; }
 
 .img-2 {
   text-align: left;
-  position: absolute;
-  top: 23%;
-  right: 8%; }
+  position: relative;
+  margin-top: -26%;
+  width: 100%;
+  margin-left: 14%; }
 
 #img2 {
-  display: none; }
+  opacity: 0;
+  transition: all .5s ease-in; }
 
 .plus-3 {
   font-size: 55px;
   color: white;
-  font-weight: 600;
-  width: 200px; }
+  font-weight: 600; }
 
 #img3 {
-  display: none; }
-
-.img-3 {
-  text-align: left;
-  margin: 12px 0 0 38px;
-  position: absolute; }
+  opacity: 0;
+  transition: all .5s ease-in; }
 
 .nav-3 {
   position: absolute;
-  bottom: 15%;
-  left: 10%; }
+  bottom: 17%;
+  left: 13%;
+  width: auto; }
+
+.img-3 {
+  position: relative;
+  width: 100%;
+  margin-top: -68%;
+  margin-left: 43%; }
 
 .plus-4 {
-  content: '';
   font-size: 55px;
-  color: white;
   font-weight: 600;
-  width: 300px; }
+  position: absolute; }
 
 .plus-4:hover {
+  color: #00FFF5 !important;
   transition: 1s;
-  transform: rotateZ(45deg); }
+  transform: rotate(45deg);
+  position: absolute; }
 
 #img4 {
-  display: none; }
-
-.img-4 {
-  position: absolute;
-  bottom: 5%;
-  right: 13%; }
+  opacity: 0;
+  transition: all .5s ease-in; }
 
 .nav-4 {
   position: absolute;
-  bottom: 5%;
-  right: 30%; }
+  bottom: 10%;
+  right: 25%;
+  width: auto; }
+
+.img-4 {
+  position: relative;
+  width: 100%;
+  margin-top: 5%;
+  margin-left: 16%; }
 
 .deco-x {
   font-size: 55px;
@@ -405,3 +411,6 @@ col {
 
 button:focus {
   outline: none !important; }
+
+.botones {
+  position: relative; }
