@@ -32,6 +32,10 @@
                         </ol>
                     </div>
             </div>
+            <div class="botonplus">
+                <button class="plus-about1" id="open">+</button>
+            </div>
+            </section>
             <div class="d-flex justify-content-center mt-5">
                 <img src="../img/cw-img.png">
             </div>
@@ -43,15 +47,20 @@
                     que me rodea se contagie de la buena energía. <span style="color: #F757EB;"><i>Hacer de cada cosa, momento o lugar algo maravilloso.</i></span> </p>
             </div>
         </section>
-        <button class="plus-about1" id="open">+</button>  
+
+        <div class="botones">
+            <button class="heart" id="heart"> </button>
+            <button class="plus-about3" id="open3">+</button>
+        </div>
+         
         <section class="estudios">
             <div class="cls-1">
                 <svg xmlns="http://www.w3.org/2000/svg" width="236.571" height="400" viewBox="0 0 236.571 400" >
                 <path id="Trazado_2" data-name="Trazado 2" class="cls-1 GmGAsBXs_0" d="M450.653,1610.021,216.084,1610l1.409,400" transform="translate(-215.081 -1609)"></path>
                 <style data-made-with="vivus-instant">.GmGAsBXs_0{stroke-dasharray:687 689;stroke-dashoffset:688;animation:GmGAsBXs_draw 3000ms linear 0ms forwards;}@keyframes GmGAsBXs_draw{100%{stroke-dashoffset:0;}}@keyframes GmGAsBXs_fade{0%{stroke-opacity:1;}94.44444444444444%{stroke-opacity:1;}100%{stroke-opacity:0;}}</style></svg>
-               <div class="line-box"></div>
+                <div class="line-box"></div>
             </div>
-            <div class="offset-1 fade-in-top">
+            <div class="offset-1 fade-in-top" style="margin-left: 23%;">
                 <p>ESTUDIOS:
                     <ul>
                         <li><strong>Diseño Gráfico Profesional,</strong> Duoc UC 2010.</li>
@@ -61,14 +70,11 @@
                         <li><strong>Curso Diseño web,</strong> 2020 Coderhouse Arg.</li>
                     </ul>
                 </p>
-                <button class="cerrar2">X</button>
-            </div>   
+            </div>
         </section>
-        <button class="heart" id="heart"> </button>
-        <section class="world fade-in-top" id="mundo">
-            <button class="cerrar">X</button>
-            <div class="col-12 row text-about world">
-                <img src="../img/brighton beach_melbourne-small.jpg" class="col-5 offset-1 world">
+        <section id="mundo">
+            <div class="col-12 row text-about fade-in-top">
+                <img src="../img/brighton beach_melbourne-small.jpg" class="col-5 offset-1">
                 <div class="col-5">
                     <h1>Me perdí por el mundo durante 5 años!</h1>
                     <p>A fines del 2014 decidí comenzar la aventura más increíble de mi vida, me fui hasta Nueva Zelanda 
@@ -83,7 +89,6 @@
                 </div>
             </div>
         </section>
-        <button class="plus-about3" id="open3">+</button>
         <section id="laboral">
             <div class="row d-flex justify-content-center">
                 <h1 class="col-12">EXPERIENCIA LABORAL</h1>
@@ -139,6 +144,7 @@
                 </div> 
             </div> 
         </section>
+ 
         <div class="footer row">
             <div class="col-12 d-inline-flex pl-0 justify-content-around">
                 <div>
@@ -176,47 +182,49 @@
                 </div>
             </div>
         </div>
-        
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
-    $(document).ready(function(){
-      $("#heart").hover(function(){
-        $(".world").show();
-      });
-      $(".cerrar").click(function(){
-        $(".world").hide();
-      });
-    });
-    </script>
-       <script>
-        $(document).ready(function(){
-          $("#open").hover(function(){
-            $(".estudios").show();
-          });
-          $(".cerrar2").click(function(){
-            $(".estudios").hide();
-          });
-          $('#show').click(function() {
-              $('.menu').toggle("slide");
-            });
-            $("#open3").click(function(){
-            $("#laboral").show();
-          });
-          $(".cerrar2").click(function(){
-            $(".estudios").hide();
-          });
-        });
-
-        </script>
-    
-  
-  
-
+   
     <!-- Optional JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-  </body>
+           <script>
+            $(document).ready(function(){
+              $(".botonplus").click(function() { 
+                   $(".estudios").css({opacity: 1}); 
+               }); 
+               $("#heart").click(function() { 
+                   $(".estudios").css({opacity: 0}); 
+               }); 
+               $("#open3").click(function() { 
+                   $(".estudios").css({opacity: 0}); 
+               }); 
+               $('#show').click(function() {
+                  $('.menu').toggle("slide");
+                });
+               $("#heart").click(function(){
+                    $("#mundo").css({opacity:1});
+                });
+                $(".botonplus").click(function(){
+                    $("#mundo").css({opacity:0});
+                });
+                $("#open3").click(function(){
+                    $("#mundo").css({opacity:0});
+                });
+
+                $("#open3").click(function(){
+                    $("#laboral").css({opacity:1});
+                });
+                $(".botonplus").click(function(){
+                    $("#laboral").css({opacity:0});
+                });
+                $("#heart").click(function(){
+                    $("#laboral").css({opacity:0});
+                });
+            });
+    
+            </script>  
+    </body>
 </html>

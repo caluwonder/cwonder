@@ -37,9 +37,9 @@ col{
 .about-back {
   background-image: radial-gradient(#860281, #470167);
   height: auto;
-  width: 100%;
-  position: absolute;
+  position: relative;
   padding: 0; }
+
 
 .digital-back {
   background-image: linear-gradient(#581902, #DB6703);
@@ -211,7 +211,7 @@ col{
 
 
 .head {
-  margin-top: 4em; }
+  padding-top: 4em; }
 
 .btn-back {
   font-size: 40px;
@@ -254,30 +254,20 @@ col{
   padding-bottom: 2em;
   font-weight: 200; }
 
+
+.botonplus{
+  position: absolute;
+  top: 21%;
+  left: 33%;
+}
 .plus-about1 {
   font-size: 45px;
   color: white;
   font-weight: 600;
-  position: absolute;
-  top: 26%;
-  left: 30%;
-  display: block; }
+  position: relative;
+  display: block; 
 
-  .plus-about2 {
-    font-size: 45px;
-    color: white;
-    font-weight: 600;
-    position: absolute;
-    right: 30%;
-    left: 30%; }
-
-  .plus-about3 {
-    font-size: 45px;
-    color: white;
-    font-weight: 600;
-    position: absolute;
-    top: 50%;
-    left: 5%; }
+}
 
 .cls-1 {
   fill: none;
@@ -285,20 +275,39 @@ col{
   stroke-linecap: round;
   stroke-width: 2px;
   position: absolute;
-  left: 7.7em;
-  top: -145%;
-  width: 5.1em; }
+  width: 5.1em; 
+  top: -73%;
+  left: 27%;
+}
 
+.plus-about2 {
+  font-size: 45px;
+  color: white;
+  font-weight: 600;
+  position: absolute;
+  right: 30%;
+  left: 30%; }
 
+.plus-about3 {
+  font-size: 45px;
+  color: white;
+  font-weight: 600;
+  position: absolute;
+  top: 100%;
+  left: 3%;
+  z-index: 1; 
+}
 
 .img-about {
   width: 400px;
   height: auto; }
 
 .estudios {
-  position: relative;
-  margin-top: 15%;
-  display: none; }
+  position: absolute;
+  opacity: 0;
+  z-index: 0;
+}
+
   .estudios p {
     color: white;
     font-family: "Montserrat", sans-serif;
@@ -337,9 +346,10 @@ col{
   padding-bottom: 10px; }
 
 #mundo {
-  position: relative;
-  margin-top: 10%;
-  display: none; }
+  opacity: 0;
+  position: absolute;
+  margin-top: 5%;
+  }
 
 .heart {
   background-image: url(../../img/heart.png);
@@ -348,15 +358,16 @@ col{
   height: 32px;
   background-repeat: no-repeat;
   margin-left: 50%;
-  margin-top: 60px; }
+  margin-top: 2%; }
 
 #laboral {
+  position: relative;
   font-family: "Montserrat", sans-serif;
   color: #ffffff;
   font-weight: 300;
   text-align: justify;
   margin-top: 5%;
-  display: none;
+  opacity: 0;
  }
   #laboral h1 {
     font-size: 22px;
@@ -412,21 +423,6 @@ col{
     padding: 10px 0;
     line-height: 35px; }
 
-.cerrar {
-  color: #ffffff;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 32px;
-  right: 10%;
-  position: absolute;
-  top: -25%; }
-
-.cerrar2 {
-  color: #ffffff;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 32px;
-  left: 50%;
-  position: absolute;
-  top: -10%; }
 
 button:focus {
   outline: none !important; }
